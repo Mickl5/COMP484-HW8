@@ -1,0 +1,148 @@
+/* Color Palette
+03045e
+0077B6
+00B4D8
+90E0EF
+*/
+
+/* Global styles 
+------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    background-color: #CAF0F8; 
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #03045e;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.navbar {
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    background-color: #03045e;
+    z-index: 9999;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
+
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
+
+/* Header & Footer 
+------------------------------------*/
+header {
+    background-color: #03045e;
+    color: white;
+    padding: 40px 20px;
+}
+
+header h1, header h2 {
+    margin: 0;
+}
+
+.header-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.pic {
+    /*WHen trying to use the columns for the image the border wouldnt fit right, so i excluded it and went back to flex box for the header*/
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #0077B6;
+}
+
+footer {
+    background-color: #03045e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Work Experience
+------------------------------------*/
+.work-exp {
+    background: linear-gradient(to bottom, #ffffff, #CAF0F8);
+}
+
+/* Education
+------------------------------------*/
+.ed-section {
+    background: linear-gradient( rgba(3, 4, 94, 0.8),  rgba(0, 180, 216, 0.6) ), url('../images/UL-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    padding: 80px 50px;
+}
